@@ -7,6 +7,8 @@ print('Pandas version: ' + pd.__version__)
 
 df = pd.read_excel('//path/to/file.xlsx', sheet_name=5, usecols=1, header=2, nrows=5) 
 # Load 6th sheet, up to 2nd col and 5 rows, header is row 3; 
+df = pd.read_excel('//path/to/file.xlsx', sheet_name=5, usecols=[8,9], header=2, nrows=5).sort_values('COL_NAME', ascending=False) 
+# Load 6th sheet, Col#8 and 9 and 5 rows, header is row 3 and sort by COL_NAME in descending order; 
 print(df)
 
 # Classic python loop uisng enumerate - Slowest
