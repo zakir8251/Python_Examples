@@ -7,7 +7,7 @@ print('Python version: ' + sys.version)
 print('Numpy version: ' + np.__version__)
 print('Pandas version: ' + pd.__version__)
 
-item_list = []
+item_list = [1,2,0.5,3]
 item_arr = np.array(item_list)
 print(item_arr)
 x=range(0,len(item_arr))
